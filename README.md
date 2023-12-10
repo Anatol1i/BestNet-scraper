@@ -10,7 +10,7 @@ This repository contains three Python scripts designed for web scraping and URL 
 
 ## 1. Web Scraping Script with Selenium
 ### Purpose
-This script uses Selenium to scrape a website, extracting details such as names, titles, addresses, phone numbers, websites, and email links.
+This script uses Selenium to scrape a website, extracting details such as `names, titles, addresses, phone numbers, websites, and email links`.
 
 ### Installation
 To use this script, you need to install the required packages:
@@ -21,8 +21,8 @@ pip install selenium pandas urllib3
 
 ### Usage
 1. Download the appropriate ChromeDriver for your version of Google Chrome from ChromeDriver.
-2. Update the driver = webdriver.Chrome('path to driver') line with the path to your ChromeDriver.
-3. Set the url, start_number, and finish_number variables to specify the scraping range.
+2. Update the driver = `webdriver.Chrome('path to driver')` line with the path to your ChromeDriver.
+3. Set the `url, start_number, and finish_number` variables to specify the scraping range.
 4. Run the script. The results will be saved as a CSV file.
 
 ### Customization
@@ -40,9 +40,9 @@ This script uses Selenium and proxy servers to scrape emails from web pages.
 Follow the same installation steps as the first script.
 
 ### Usage
-1. Ensure you have a list of proxies and update the get_proxies() function with your proxy server addresses.
-2. Update chromedriver_path with the path to your ChromeDriver.
-3. Specify the input CSV file name in df = pd.read_csv('file name ').
+1. Ensure you have a list of proxies and update the `get_proxies()` function with your proxy server addresses.
+2. Update `chromedriver_path` with the path to your ChromeDriver.
+3. Specify the input CSV file name in `df = pd.read_csv('file name ')`.
 4. Run the script. The emails will be added to the existing DataFrame and saved in a new CSV file.
 
    
@@ -64,7 +64,7 @@ pip install pandas requests
 ```
 ### Usage
 
-1. Prepare a CSV file with a column named 'Website' containing the URLs to be checked.
+1. Prepare a CSV file with a column named `'Website'` containing the URLs to be checked.
 2. Run the script. The status of each URL will be checked and the results will be saved in a new CSV file.
 
 ### Customization
